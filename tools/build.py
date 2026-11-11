@@ -20,7 +20,7 @@ SOCIAL = [("Instagram", "https://www.instagram.com/opendoors_oficial/"),
           ("TikTok", "https://www.tiktok.com/@open.doors.escola"),
           ("Facebook", "https://www.facebook.com/profile.php?id=100089439295352")]
 FONTS = "https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Michroma&display=swap"
-VER = "2"
+VER = "2.1"
 
 ICONS = {
     "cordas": '<path d="M30 6l8 8M34 10L20 24"/><path d="M20 24c-6-4-14-1-14 7 0 7 6 11 11 11 8 0 11-8 7-14"/><circle cx="17" cy="31" r="3"/><path d="M12 36l4-4"/>',

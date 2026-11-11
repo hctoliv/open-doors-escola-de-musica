@@ -75,7 +75,7 @@ button{font:inherit;color:inherit}
   linear-gradient(0deg,var(--black) 0%,rgba(11,10,8,0) 40%)}
 .hero .spot{background:radial-gradient(420px 420px at var(--sx,62%) var(--sy,38%),rgba(243,214,140,.16),transparent 70%);mix-blend-mode:screen;transition:background .1s}
 .hero .wrap{position:relative;width:100%;padding-block:120px 56px;display:grid;gap:24px}
-.hero h1{font-size:clamp(2.8rem,6.2vw,6rem);max-width:10ch}
+.hero h1{font-size:clamp(2.8rem,5.3vw,5.6rem);max-width:9ch}
 .hero h1 .gold{color:var(--gold);font-style:italic;font-weight:700;letter-spacing:-.04em}
 .hero .lead{max-width:44ch;font-size:clamp(1.02rem,1.5vw,1.2rem);color:rgba(245,239,227,.82)}
 .hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
