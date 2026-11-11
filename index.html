@@ -22,8 +22,8 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Michroma&display=swap">
-<link rel="stylesheet" href="assets/css/site.css?v=2.1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap">
+<link rel="stylesheet" href="assets/css/site.css?v=3">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MusicSchool", "@id": "https://hctoliv.github.io/open-doors-escola-de-musica/#escola", "name": "Open Doors – Escola de Música", "url": "https://hctoliv.github.io/open-doors-escola-de-musica/", "logo": "https://hctoliv.github.io/open-doors-escola-de-musica/icon-512.png", "image": "https://hctoliv.github.io/open-doors-escola-de-musica/og.jpg", "description": "Escola de música na Vila Fátima, São Paulo, com cursos de cordas, canto, bateria, sopro, teclas e teatro.", "telephone": "+55 11 98559-2748", "email": "contato@escolademusicaopendoors.com.br", "address": {"@type": "PostalAddress", "streetAddress": "Av. Sapopemba, 7906", "addressLocality": "São Paulo", "addressRegion": "SP", "postalCode": "03255-000", "addressCountry": "BR"}, "areaServed": "Zona Leste de São Paulo", "sameAs": ["https://www.instagram.com/opendoors_oficial/", "https://www.tiktok.com/@open.doors.escola", "https://www.facebook.com/profile.php?id=100089439295352"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Preciso saber tocar para começar?", "acceptedAnswer": {"@type": "Answer", "text": "Não. O nível Rising Stars é feito para quem acabou de começar. Você entra do zero e já participa dos saraus da escola."}}, {"@type": "Question", "name": "Os alunos se apresentam de verdade?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Todo aluno começa no Rising Stars, com saraus e pequenas apresentações. Conforme evolui, passa para Stars e Super Stars e se apresenta em lojas parceiras, teatros e eventos de médio porte."}}, {"@type": "Question", "name": "E se a aula cair em um feriado?", "acceptedAnswer": {"@type": "Answer", "text": "A aula é reposta. Você acompanha as reposições no app, na área Aulas a repor."}}, {"@type": "Question", "name": "Como acompanho aulas, pagamentos e faltas?", "acceptedAnswer": {"@type": "Answer", "text": "Pelo app da Open Doors. Lá estão a agenda das aulas, as faturas, a justificativa de faltas, o check-in por QR code, a reserva de salas para estudar e o contato com professores e secretaria."}}, {"@type": "Question", "name": "Quanto custa?", "acceptedAnswer": {"@type": "Answer", "text": "Os valores dependem do curso e do formato da aula. Mande uma mensagem no WhatsApp e a secretaria passa os valores e horários disponíveis."}}, {"@type": "Question", "name": "Onde fica a escola?", "acceptedAnswer": {"@type": "Answer", "text": "Na Av. Sapopemba, 7906 – Vila Fátima, São Paulo – SP, 03255-000. Atendimento pelo WhatsApp (11) 98559-2748."}}]}</script>
 </head>
@@ -42,24 +42,44 @@
 
 <main id="conteudo">
 <section class="hero" id="topo" aria-labelledby="t-hero">
-  <picture>
-    <source type="image/webp" srcset="assets/img/palco-960.webp 960w, assets/img/palco-1600.webp 1600w" sizes="100vw">
-    <img src="assets/img/palco-1600.jpg" srcset="assets/img/palco-960.jpg 960w, assets/img/palco-1600.jpg 1600w" sizes="100vw" width="1600" height="784" alt="Alunos e professores da Open Doors tocando ao vivo no palco: cantor ao centro, baterista e baixista" fetchpriority="high">
-  </picture>
+  <div class="hero-bg" aria-hidden="true">
+    <video class="bg-video" src="assets/video/ensaio.mp4" poster="assets/video/ensaio.jpg" muted loop playsinline autoplay preload="auto"></video>
+  </div>
   <div class="shade"></div><div class="spot"></div>
   <div class="doors" aria-hidden="true"><div class="door l"></div><div class="door r"></div></div>
-  <div class="wrap">
-    <span class="label rise d1">Escola de música · Vila Fátima, SP</span>
-    <h1 id="t-hero" class="rise d2">Portas <span class="gold">abertas</span> para o seu sonho musical.</h1>
-    <p class="lead rise d3">Professores formados e especializados, um ambiente acolhedor e palco de verdade desde o primeiro mês. Aqui você encontra o seu talento.</p>
-    <div class="ctas rise d4">
-      <a class="btn btn-gold" href="#contato"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></svg>Quero conhecer a escola</a>
-      <a class="btn btn-line" href="#ensaio">Tocar na sala de ensaio</a>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="label rise d1">Escola de música · Vila Fátima, SP</span>
+      <h1 id="t-hero" class="rise d2">Portas <span class="gold">abertas</span> para o seu sonho musical.</h1>
+      <p class="lead rise d3">Mais que um curso: um caminho de vivência e experiência musical. Professores especializados, um ambiente acolhedor e palco de verdade desde o começo.</p>
+      <div class="ctas rise d4">
+        <a class="btn btn-gold" href="#contato"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></svg>Quero conhecer a escola</a>
+        <a class="btn btn-line" href="#ensaio">Tocar na sala de ensaio</a>
+      </div>
+      <div class="facts rise d5">
+        <div><b>6</b><span>cursos de música e teatro</span></div>
+        <div><b>3</b><span>níveis de palco</span></div>
+        <div><b>1</b><span>app para acompanhar tudo</span></div>
+      </div>
     </div>
-    <div class="facts rise d5">
-      <div><b>6</b><span>cursos de música e teatro</span></div>
-      <div><b>3</b><span>níveis de palco</span></div>
-      <div><b>1</b><span>app para acompanhar tudo</span></div>
+    <div class="wall rise d3" aria-label="Vídeos do Instagram da Open Doors">
+      <div class="wall-col c1"><a class="reel tall" href="https://www.instagram.com/reel/DcPQnjtK3Hr/" target="_blank" rel="noopener" aria-label="Ensaio do espetáculo Além da Porta (abre no Instagram)">
+          <video src="assets/video/ensaio.mp4" poster="assets/video/ensaio.jpg" muted loop playsinline preload="auto"></video>
+          <span class="reel-tag">Ensaio do espetáculo Além da Porta</span>
+        </a></div><div class="wall-col c2"><a class="reel " href="https://www.instagram.com/reel/DLs74Asy3Ay/" target="_blank" rel="noopener" aria-label="Professor e aluna na guitarra (abre no Instagram)">
+          <video src="assets/video/guitarra.mp4" poster="assets/video/guitarra.jpg" muted loop playsinline preload="none"></video>
+          <span class="reel-tag">Professor e aluna na guitarra</span>
+        </a><a class="reel wide" href="https://www.instagram.com/reel/C88RlbHtEw-/" target="_blank" rel="noopener" aria-label="Festival junino (abre no Instagram)">
+          <video src="assets/video/festival.mp4" poster="assets/video/festival.jpg" muted loop playsinline preload="none"></video>
+          <span class="reel-tag">Festival junino</span><small class="credit">Vídeo: @michel.e.araujo</small>
+        </a></div><div class="wall-col c3"><a class="reel " href="https://www.instagram.com/reel/DTLlbuTESdK/" target="_blank" rel="noopener" aria-label="Exercício de violino (abre no Instagram)">
+          <video src="assets/video/violino.mp4" poster="assets/video/violino.jpg" muted loop playsinline preload="none"></video>
+          <span class="reel-tag">Exercício de violino</span>
+        </a><a class="reel " href="https://www.instagram.com/reel/DOeaw6wCvjU/" target="_blank" rel="noopener" aria-label="Teatro no palco (abre no Instagram)">
+          <video src="assets/video/teatro.mp4" poster="assets/video/teatro.jpg" muted loop playsinline preload="none"></video>
+          <span class="reel-tag">Teatro no palco</span>
+        </a></div>
+      <a class="wall-follow" href="https://www.instagram.com/opendoors_oficial/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>@opendoors_oficial</a>
     </div>
   </div>
 </section>
@@ -298,8 +318,8 @@
   </div>
 </footer>
 <a class="fab" href="https://wa.me/5511985592748" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></svg></a>
-<script src="assets/js/audio.js?v=2.1" defer></script>
-<script src="assets/js/site.js?v=2.1" defer></script>
-<script src="assets/js/sequencer.js?v=2.1" defer></script>
+<script src="assets/js/audio.js?v=3" defer></script>
+<script src="assets/js/site.js?v=3" defer></script>
+<script src="assets/js/sequencer.js?v=3" defer></script>
 </body>
 </html>

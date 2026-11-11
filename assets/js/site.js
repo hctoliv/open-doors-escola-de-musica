@@ -29,6 +29,21 @@
     });
   }
 
+  /* vídeos do hero: tocam só quando aparecem na tela; com movimento reduzido, ficam na capa */
+  const vids = $$('.hero video');
+  if (reduce) {
+    vids.forEach((v) => { v.removeAttribute('autoplay'); v.pause(); });
+  } else if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => entries.forEach((e) => {
+      const v = e.target;
+      if (e.isIntersecting && getComputedStyle(v.closest('.reel, .hero-bg')).display !== 'none') {
+        if (v.preload === 'none') v.preload = 'auto';
+        const p = v.play(); if (p && p.catch) p.catch(() => {});
+      } else v.pause();
+    }), { threshold: 0.15 });
+    vids.forEach((v) => io.observe(v));
+  }
+
   /* ouvir o som de cada curso */
   $$('[data-demo]').forEach((b) => b.addEventListener('click', (e) => {
     e.preventDefault(); e.stopPropagation();

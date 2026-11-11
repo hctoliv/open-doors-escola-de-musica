@@ -19,8 +19,8 @@ MAPS = "https://www.google.com/maps/search/?api=1&query=Open+Doors+Escola+de+M%C
 SOCIAL = [("Instagram", "https://www.instagram.com/opendoors_oficial/"),
           ("TikTok", "https://www.tiktok.com/@open.doors.escola"),
           ("Facebook", "https://www.facebook.com/profile.php?id=100089439295352")]
-FONTS = "https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Michroma&display=swap"
-VER = "2.1"
+FONTS = "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap"
+VER = "3"
 
 ICONS = {
     "cordas": '<path d="M30 6l8 8M34 10L20 24"/><path d="M20 24c-6-4-14-1-14 7 0 7 6 11 11 11 8 0 11-8 7-14"/><circle cx="17" cy="31" r="3"/><path d="M12 36l4-4"/>',
@@ -233,6 +233,31 @@ def footer(pre, page=False):
 '''
 
 
+IG = "https://www.instagram.com/"
+# Mural de reels do hero: vídeos reais do @opendoors_oficial, cortados sem legendas.
+REELS = [
+    [("ensaio", "Ensaio do espetáculo Além da Porta", "reel/DcPQnjtK3Hr/", "tall", None)],
+    [("guitarra", "Professor e aluna na guitarra", "reel/DLs74Asy3Ay/", "", None),
+     ("festival", "Festival junino", "reel/C88RlbHtEw-/", "wide", "Vídeo: @michel.e.araujo")],
+    [("violino", "Exercício de violino", "reel/DTLlbuTESdK/", "", None),
+     ("teatro", "Teatro no palco", "reel/DOeaw6wCvjU/", "", None)],
+]
+
+
+def reel_wall():
+    cols = []
+    for i, col in enumerate(REELS):
+        tiles = "".join(f'''<a class="reel {shape}" href="{IG}{path}" target="_blank" rel="noopener" aria-label="{alt} (abre no Instagram)">
+          <video src="assets/video/{n}.mp4" poster="assets/video/{n}.jpg" muted loop playsinline preload="{'auto' if n == 'ensaio' else 'none'}"></video>
+          <span class="reel-tag">{alt}</span>{f'<small class="credit">{cr}</small>' if cr else ''}
+        </a>''' for n, alt, path, shape, cr in col)
+        cols.append(f'<div class="wall-col c{i + 1}">{tiles}</div>')
+    return f'''<div class="wall rise d3" aria-label="Vídeos do Instagram da Open Doors">
+      {"".join(cols)}
+      <a class="wall-follow" href="{IG}opendoors_oficial/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>@opendoors_oficial</a>
+    </div>'''
+
+
 def index():
     courses = "".join(f'''
       <article class="course">
@@ -279,25 +304,27 @@ def index():
                 "", "", [faq_ld]) + topbar("") + f'''
 <main id="conteudo">
 <section class="hero" id="topo" aria-labelledby="t-hero">
-  <picture>
-    <source type="image/webp" srcset="assets/img/palco-960.webp 960w, assets/img/palco-1600.webp 1600w" sizes="100vw">
-    <img src="assets/img/palco-1600.jpg" srcset="assets/img/palco-960.jpg 960w, assets/img/palco-1600.jpg 1600w" sizes="100vw" width="1600" height="784" alt="Alunos e professores da Open Doors tocando ao vivo no palco: cantor ao centro, baterista e baixista" fetchpriority="high">
-  </picture>
+  <div class="hero-bg" aria-hidden="true">
+    <video class="bg-video" src="assets/video/ensaio.mp4" poster="assets/video/ensaio.jpg" muted loop playsinline autoplay preload="auto"></video>
+  </div>
   <div class="shade"></div><div class="spot"></div>
   <div class="doors" aria-hidden="true"><div class="door l"></div><div class="door r"></div></div>
-  <div class="wrap">
-    <span class="label rise d1">Escola de música · Vila Fátima, SP</span>
-    <h1 id="t-hero" class="rise d2">Portas <span class="gold">abertas</span> para o seu sonho musical.</h1>
-    <p class="lead rise d3">Professores formados e especializados, um ambiente acolhedor e palco de verdade desde o primeiro mês. Aqui você encontra o seu talento.</p>
-    <div class="ctas rise d4">
-      <a class="btn btn-gold" href="#contato">{WA_SVG}Quero conhecer a escola</a>
-      <a class="btn btn-line" href="#ensaio">Tocar na sala de ensaio</a>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="label rise d1">Escola de música · Vila Fátima, SP</span>
+      <h1 id="t-hero" class="rise d2">Portas <span class="gold">abertas</span> para o seu sonho musical.</h1>
+      <p class="lead rise d3">Mais que um curso: um caminho de vivência e experiência musical. Professores especializados, um ambiente acolhedor e palco de verdade desde o começo.</p>
+      <div class="ctas rise d4">
+        <a class="btn btn-gold" href="#contato">{WA_SVG}Quero conhecer a escola</a>
+        <a class="btn btn-line" href="#ensaio">Tocar na sala de ensaio</a>
+      </div>
+      <div class="facts rise d5">
+        <div><b>6</b><span>cursos de música e teatro</span></div>
+        <div><b>3</b><span>níveis de palco</span></div>
+        <div><b>1</b><span>app para acompanhar tudo</span></div>
+      </div>
     </div>
-    <div class="facts rise d5">
-      <div><b>6</b><span>cursos de música e teatro</span></div>
-      <div><b>3</b><span>níveis de palco</span></div>
-      <div><b>1</b><span>app para acompanhar tudo</span></div>
-    </div>
+    {reel_wall()}
   </div>
 </section>
 

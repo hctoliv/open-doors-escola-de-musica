@@ -7,7 +7,7 @@ No ar: https://hctoliv.github.io/open-doors-escola-de-musica/
 
 ## O que tem
 
-- **Home** com foto real do palco da escola, portas que se abrem na entrada (sem tela de carregamento).
+- **Home** com vídeos reais do Instagram (@opendoors_oficial) no hero: fundo com o ensaio do espetáculo e um mural de reels (guitarra, festival junino, violino, teatro). Os vídeos ficam em `assets/video/` (cortados sem legendas, ~3,6 MB no total) e só tocam quando aparecem na tela.
 - **Sala de ensaio**: sequenciador de 16 passos com bateria, cordas, teclas e sopro sintetizados no navegador (Web Audio, nenhum arquivo de áudio). Estilos Pop, Samba e Rock, BPM ajustável e link para compartilhar a batida. No celular a grade gira para caber na tela.
 - **Quiz** "qual instrumento combina com você", que termina numa mensagem pronta para o WhatsApp.
 - **Páginas por curso** (`cursos/*.html`) para buscas locais como "aula de bateria Vila Fátima".
