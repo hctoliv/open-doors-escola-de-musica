@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hctoliv.github.io/open-doors-escola-de-musica/sitemap.xml
