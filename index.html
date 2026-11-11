@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Open Doors Escola de Música</title>
+<meta name="description" content="Open Doors – Escola de Música na Vila Fátima, São Paulo. Cordas, canto, bateria, sopro, teclas e teatro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap">
+<meta property="og:title" content="Open Doors – Escola de Música">
+<meta property="og:description" content="Portas abertas para o seu sonho musical. Cordas, canto, bateria, sopro, teclas e teatro na Vila Fátima, São Paulo.">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Open Doors – início">
+      <img src="assets/logo.png" alt="Open Doors">
+      <span>Escola<br>de Música</span>
+    </a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#cursos">Cursos</a>
+      <a href="#jornada">Jornada</a>
+      <a href="#app">App do aluno</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#visite">Visite</a>
+    </nav>
+    <a class="btn btn-brass" href="#visite">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+      Matricule-se
+    </a>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <canvas id="stage" aria-hidden="true"></canvas>
+  <div class="doors" aria-hidden="true"><div class="door l"></div><div class="door r"></div></div>
+  <div class="wrap">
+    <p class="eyebrow reveal d1">Vila Fátima · São Paulo</p>
+    <h1 class="reveal d2">Portas <em>abertas</em> para o seu sonho musical</h1>
+    <p class="lead reveal d3">Na Open Doors, quem chega com vontade de tocar, cantar ou atuar encontra professores especializados, um ambiente acolhedor e palco de verdade para se apresentar.</p>
+    <div class="ctas reveal d4">
+      <a class="btn btn-brass" href="#cursos">Ouça os cursos</a>
+      <a class="btn btn-ghost" href="#visite">Fale com a gente</a>
+    </div>
+  </div>
+  <span class="scrollcue" aria-hidden="true">role ↓</span>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Violão</span><span>Guitarra</span><span>Canto</span><span>Bateria</span><span>Saxofone</span><span>Teclado</span><span>Piano</span><span>Teatro</span><span>Saraus</span>
+    <span>Violão</span><span>Guitarra</span><span>Canto</span><span>Bateria</span><span>Saxofone</span><span>Teclado</span><span>Piano</span><span>Teatro</span><span>Saraus</span>
+  </div>
+</div>
+
+<section class="scene" id="cursos">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Cursos</p>
+      <h2>Escolha o seu instrumento. Toque nele.</h2>
+      <p>Seis caminhos para começar. Clique em um card para ouvir como ele soa.</p>
+    </div>
+    <div class="scope">
+      <canvas id="scope" aria-hidden="true"></canvas>
+      <p class="hint" id="hint">Som ligado: aumente o volume e clique em um instrumento.</p>
+    </div>
+    <div class="grid6">
+      <button class="inst" data-s="cordas" type="button">
+        <svg viewBox="0 0 48 48"><path d="M30 6l8 8M34 10L20 24"/><path d="M20 24c-6-4-14-1-14 7 0 7 6 11 11 11 8 0 11-8 7-14"/><circle cx="17" cy="31" r="3"/><path d="M12 36l4-4"/></svg>
+        <h3>Cordas</h3>
+        <p>Violão, guitarra e baixo, da primeira posição de acorde ao solo.</p>
+        <span class="play"><i></i>Tocar</span>
+      </button>
+      <button class="inst" data-s="canto" type="button">
+        <svg viewBox="0 0 48 48"><rect x="18" y="4" width="12" height="22" rx="6"/><path d="M12 22a12 12 0 0 0 24 0M24 34v8M17 42h14"/></svg>
+        <h3>Canto</h3>
+        <p>Técnica vocal, respiração e repertório para cantar com segurança.</p>
+        <span class="play"><i></i>Tocar</span>
+      </button>
+      <button class="inst" data-s="bateria" type="button">
+        <svg viewBox="0 0 48 48"><ellipse cx="24" cy="26" rx="16" ry="5"/><path d="M8 26v10c0 3 7 5 16 5s16-2 16-5V26"/><path d="M12 6l9 15M36 6l-9 15"/></svg>
+        <h3>Bateria</h3>
+        <p>Coordenação, levadas e groove, do rock ao samba.</p>
+        <span class="play"><i></i>Tocar</span>
+      </button>
+      <button class="inst" data-s="sopro" type="button">
+        <svg viewBox="0 0 48 48"><path d="M30 4l6 6-14 14v8c0 6-4 10-9 10s-7-4-7-7 3-5 6-5h4V18z"/><path d="M26 14l2 2M23 17l2 2M20 20l2 2"/></svg>
+        <h3>Sopro</h3>
+        <p>Saxofone, flauta e outros sopros, com leitura e improviso.</p>
+        <span class="play"><i></i>Tocar</span>
+      </button>
+      <button class="inst" data-s="teclas" type="button">
+        <svg viewBox="0 0 48 48"><rect x="4" y="12" width="40" height="24" rx="3"/><path d="M12 12v24M20 12v24M28 12v24M36 12v24"/><path d="M10 12v12h4V12M18 12v12h4V12M34 12v12h4V12" fill="currentColor" stroke-width="0" style="fill:var(--brass)"/></svg>
+        <h3>Teclas</h3>
+        <p>Teclado e piano, com leitura de partitura e cifra.</p>
+        <span class="play"><i></i>Tocar</span>
+      </button>
+      <button class="inst" data-s="teatro" type="button">
+        <svg viewBox="0 0 48 48"><path d="M6 8h20v12c0 7-4 12-10 12S6 27 6 20z"/><path d="M11 16h2M19 16h2M12 24c2 2 6 2 8 0"/><path d="M28 16h14v10c0 7-4 12-10 12-3 0-5-1-7-3"/><path d="M32 23h2M38 23h2M33 31c2-2 6-2 8 0"/></svg>
+        <h3>Teatro</h3>
+        <p>Expressão, voz e presença de palco para atuar sem medo.</p>
+        <span class="play"><i></i>Aplausos</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="scene journey" id="jornada">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Jornada no palco</p>
+      <h2>Do primeiro sarau ao grande palco.</h2>
+      <p>Todo aluno sobe ao palco. Conforme evolui, avança de nível e ganha apresentações maiores, dentro e fora da escola.</p>
+    </div>
+    <div class="steps">
+      <article class="step">
+        <div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 7 7 .6-5.4 4.7 1.7 7.2L12 17.8 5.7 21.5l1.7-7.2L2 9.6 9 9z"/></svg></div>
+        <span class="lvl">Nível 1 · Iniciantes</span>
+        <h3>Rising Stars</h3>
+        <ul><li>Para quem está começando na música.</li><li>Primeiro contato com o público, em um ambiente seguro.</li></ul>
+        <p class="stage"><b>Onde se apresenta</b>Saraus e pequenas apresentações na escola ou perto dela.</p>
+      </article>
+      <article class="step">
+        <div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 7 7 .6-5.4 4.7 1.7 7.2L12 17.8 5.7 21.5l1.7-7.2L2 9.6 9 9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7 7 .6-5.4 4.7 1.7 7.2L12 17.8 5.7 21.5l1.7-7.2L2 9.6 9 9z"/></svg></div>
+        <span class="lvl">Nível 2 · Conhecimento básico</span>
+        <h3>Stars</h3>
+        <ul><li>Pelo menos 2 meses de matrícula.</li><li>No máximo 2 faltas sem justificativa.</li><li>Desempenho mínimo para se apresentar.</li><li>Ter feito a apresentação Rising Stars.</li></ul>
+        <p class="stage"><b>Onde se apresenta</b>Shows em lojas parceiras, teatros e eventos de médio porte.</p>
+      </article>
+      <article class="step">
+        <div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 7 7 .6-5.4 4.7 1.7 7.2L12 17.8 5.7 21.5l1.7-7.2L2 9.6 9 9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7 7 .6-5.4 4.7 1.7 7.2L12 17.8 5.7 21.5l1.7-7.2L2 9.6 9 9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7 7 .6-5.4 4.7 1.7 7.2L12 17.8 5.7 21.5l1.7-7.2L2 9.6 9 9z"/></svg></div>
+        <span class="lvl">Nível 3 · Médio a avançado</span>
+        <h3>Super Stars</h3>
+        <ul><li>Conhecimento musical de médio a alto.</li><li>Mesmos critérios de frequência e desempenho do nível Stars.</li><li>Repertório pronto para palcos maiores.</li></ul>
+        <p class="stage"><b>Onde se apresenta</b>Lojas parceiras, teatros e eventos de médio porte.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="scene" id="app">
+  <div class="wrap app">
+    <div>
+      <div class="head">
+        <p class="eyebrow">App do aluno</p>
+        <h2>A escola inteira no seu bolso.</h2>
+        <p>Alunos e responsáveis acompanham tudo pelo aplicativo da Open Doors, sem depender de recado no papel.</p>
+      </div>
+      <ul class="feats">
+        <li><span>→</span>Horário das aulas</li>
+        <li><span>→</span>Boletos e mensalidades</li>
+        <li><span>→</span>Justificativa de faltas</li>
+        <li><span>→</span>Check-in por QR code</li>
+        <li><span>→</span>Reserva de sala para estudar</li>
+        <li><span>→</span>Materiais de estudo</li>
+        <li><span>→</span>Mensagens com professores</li>
+        <li><span>→</span>Contato com a secretaria</li>
+      </ul>
+    </div>
+    <div>
+      <div class="phone" aria-label="Ilustração do aplicativo">
+        <div class="screen">
+          <p class="hi">Olá, Ana ♪</p>
+          <div class="card"><small>Próxima aula</small>Teclado · Sala 2<br><span style="color:var(--muted)">Quinta, 18h30</span></div>
+          <div class="card qr"><canvas id="qr" width="21" height="21"></canvas><small>Check-in na recepção</small></div>
+          <div class="card"><small>Sala de estudo</small>Reservada · Sábado, 10h</div>
+          <div class="tabs"><b>Início</b><span>Aulas</span><span>Boletos</span><span>Chat</span></div>
+        </div>
+      </div>
+      <p class="example">Ilustração com dados de exemplo</p>
+    </div>
+  </div>
+</section>
+
+<section class="scene journey" id="depoimentos">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Quem já passou pela porta</p>
+      <h2>O que alunos e famílias contam.</h2>
+    </div>
+    <div class="quotes">
+      <article class="q">
+        <p>Elogia as aulas de teclado da filha, a atenção da equipe, a boa comunicação no grupo e a reposição das aulas que caem em feriado.</p>
+        <div class="who"><span class="av">MP</span><div><b>Michelle Palaria</b><small>Mãe de aluna</small></div></div>
+      </article>
+      <article class="q">
+        <p>Conta que a escola faz todo mundo se sentir bem-vindo e recomenda. Outras pessoas da família dele também fizeram aulas lá, inclusive de canto.</p>
+        <div class="who"><span class="av">PR</span><div><b>Paulo Roberto Castanheira</b><small>Aluno</small></div></div>
+      </article>
+      <article class="q">
+        <p>Relata só boas experiências, da recepção aos professores, que descreve como atenciosos, prestativos e qualificados. Destaca também os eventos da escola.</p>
+        <div class="who"><span class="av">PA</span><div><b>Patrícia Américo</b><small>Aluna</small></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="scene visit" id="visite">
+  <div class="wrap visit-grid">
+    <div>
+      <div class="head">
+        <p class="eyebrow">Visite a escola</p>
+        <h2>A porta está aberta.</h2>
+        <p>Uma família apaixonada por música, com um objetivo: transformar o sonho artístico de cada aluno em realidade.</p>
+      </div>
+      <div class="info">
+        <div><span class="k">Endereço</span><span class="v">Av. Sapopemba, 7906 – Vila Fátima, São Paulo – SP, 03255-000</span><a class="copy" href="https://www.google.com/maps/search/?api=1&query=Av.+Sapopemba,+7906,+S%C3%A3o+Paulo" target="_blank" rel="noopener" style="text-decoration:none">Mapa</a></div>
+        <div><span class="k">WhatsApp</span><span class="v">(11) 98559-2748</span><button class="copy" type="button" data-copy="(11) 98559-2748">Copiar</button></div>
+        <div><span class="k">E-mail</span><span class="v">contato@escolademusicaopendoors.com.br</span><button class="copy" type="button" data-copy="contato@escolademusicaopendoors.com.br">Copiar</button></div>
+      </div>
+      <div class="socials">
+        <a class="btn btn-ghost" href="https://www.instagram.com/opendoors_oficial/" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn-ghost" href="https://www.tiktok.com/@open.doors.escola" target="_blank" rel="noopener">TikTok</a>
+        <a class="btn btn-ghost" href="https://www.facebook.com/profile.php?id=100089439295352" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <form class="wa" id="waForm">
+      <h3>Monte sua mensagem</h3>
+      <p class="note">Preencha e envie direto pelo WhatsApp da escola.</p>
+      <label for="f-nome">Seu nome<input id="f-nome" name="nome" autocomplete="name" placeholder="Como podemos te chamar?"></label>
+      <div class="row2">
+        <label for="f-curso">Curso
+          <select id="f-curso" name="curso">
+            <option>Cordas</option><option>Canto</option><option>Bateria</option><option>Sopro</option><option>Teclas</option><option>Teatro</option><option>Ainda não sei</option>
+          </select>
+        </label>
+        <label for="f-quem">Para quem
+          <select id="f-quem" name="quem">
+            <option>Para mim</option><option>Para meu filho(a)</option><option>Para outra pessoa</option>
+          </select>
+        </label>
+      </div>
+      <label for="f-periodo">Melhor período
+        <select id="f-periodo" name="periodo"><option>Manhã</option><option>Tarde</option><option selected>Noite</option><option>Sábado</option></select>
+      </label>
+      <a class="btn btn-brass" id="waLink" href="https://wa.me/5511985592748" target="_blank" rel="noopener" style="justify-content:center">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>
+        Abrir no WhatsApp
+      </a>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© Open Doors – Escola de Música · Av. Sapopemba, 7906 · São Paulo</span>
+    <a href="#inicio" style="text-decoration:none;color:var(--brass)">Voltar ao palco ↑</a>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
